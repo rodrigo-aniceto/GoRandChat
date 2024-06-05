@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home Screen</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/style.css'>
+
+</head>
+<body>
+    <header>
+        <h1>GoRandChat</h1>
+    </header>
+    <main>
+        <div id=“chat-info”>
+            <p><strong>Welcome to my randon chat!</strong></p>
+            <p>put your instructions for using the application here</p>
+        </div>
+        <p><strong>Log in:</strong></p>
+        <form id="form-in" action="/chat-room" method="post">
+            
+            <input type="text" name="name" id="name" placeholder="enter your nickname" required="required">
+            <br><br>
+            <input type="checkbox" id="agree-terms" name="confirm">
+            <label for="agree-terms">I agree to the terms of use</label><br>
+            <br>
+            <input class="enter-button" type="submit" id="btn-buzz" value="Log in">
+        </form>
+    </main>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chat Screen</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/style.css'>
+</head>
+<body>
+
+    <header>
+        <h1>GoRandChat</h1>
+        
+    </header>
+    <main>
+        <div id="chat-info"></div>
+        <div id="chat-box">
+            <div id="chat-container">
+                <div id="chat-output"></div>
+            </div>
+            
+        </div>
+        <div id="chat-tools">
+            <input type="text" id="message-input" onkeypress="checkMessageEnter(event)" placeholder="Type your message here">
+            <button class="chat-button" onclick="sendMessage()">Send</button>
+            </div>
+
+            <br>
+            <button id="start-chat" class="chat-button" onclick="searchChat()">New Chat</button>
+        <br>
+        <button id="end-chat" onclick="closeChat()">End chat</button>
+    </main>
+
+    <script type="text/javascript">
+        var UserName = "{{.UserName}}"
+    </script>
+    <script src="/assets/js/chat.js"></script>
+    
+</body>
+</html>

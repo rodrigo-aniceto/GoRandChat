@@ -1,0 +1,16 @@
+package utils
+
+import (
+	"math/rand"
+)
+
+var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+
+// GenerateUserID generates a unique ID for an user
+func GenerateUserID(n int) string {
+	b := make([]rune, n)
+	for i := range b {
+		b[i] = letters[rand.Intn(len(letters))]
+	}
+	return string(b)
+}
